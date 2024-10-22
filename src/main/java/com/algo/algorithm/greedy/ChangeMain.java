@@ -11,9 +11,9 @@ public class ChangeMain {
         int n = 1_260;
         int count = 0 ;
 
-        for( int i = 0 ; i < list.size() ; i++){
-            count += n / list.get(i);
-            n = n%list.get(i);
+        for (Integer integer : list) {
+            count += n / integer;
+            n = n % integer;
         }
         System.out.println(count);
     }
